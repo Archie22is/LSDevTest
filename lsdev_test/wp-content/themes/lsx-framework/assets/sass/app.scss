@@ -1,0 +1,160 @@
+/*!
+ * LSX 1.0
+ */
+
+@import "bootstrap/bootstrap.scss";
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body { 
+   -ms-word-wrap: break-word;
+   word-wrap: break-word;
+}
+
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.banner { }
+
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.content { }
+
+
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main { }
+
+/* Gallery Shortcode */
+.gallery-row { padding: 15px 0; }
+
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar { }
+
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.content-info { }
+
+/* ==========================================================================
+   Gravity Forms
+   ========================================================================== */
+
+
+.gform_wrapper {
+ 
+    ul {
+        @extend .list-unstyled;
+    }
+ 
+    li {
+        @extend .form-group;
+    }
+ 
+    form {
+        margin-bottom: 0;
+    }
+ 
+    .gfield_required {
+        padding-left: 1px;
+        color: $state-danger-text;
+    }
+}
+ 
+.ginput_container {
+ 
+    input,
+    select,
+    textarea {
+        @extend .form-control;
+    }
+ 
+    textarea {
+      height: auto;
+    }
+}
+ 
+.gform_button {
+  @extend .btn;
+  @extend .btn-warning;
+}
+ 
+.gform_wrapper .gfield_error {
+ 
+    .gfield_label {
+        color: $state-danger-text;
+    }
+ 
+    input,
+    select,
+    textarea {
+        border-color: $alert-danger-border;
+        background-color: $alert-danger-bg;
+        color: $alert-danger-text;
+        @include form-control-focus( $alert-danger-text );
+    }
+}
+ 
+.validation_error {
+    @extend .alert;
+    @extend .alert-danger;
+}
+ 
+#gforms_confirmation_message {
+    @extend .alert;
+    @extend .alert-success;
+}
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+#wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar>a img { float: none !important; }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (min-width: $screen-sm-min) { }
+
+@media (min-width: $screen-md-min) { }
+
+@media (min-width: $screen-lg-min) { }
